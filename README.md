@@ -1,4 +1,4 @@
-# Reproduce lo que se ve en la imagen. Es un clone muy basico del landing page de twitter.
+# Haz que se vea lo que se ve en la imagen. Es un clone muy basico del landing page de twitter.
 
 
 ![Descripción de la imagen](./practica-2.png)
@@ -58,7 +58,8 @@ body {
 }
 
 .container {
- 
+/*Escribe abajo de esta linea comentada*/
+  
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -69,7 +70,8 @@ body {
 header {
   background-color: #1da1f2;
   padding: 20px;
-  text-align: center;
+ /*Escribe abajo de esta linea comentada*/
+
   color: white;
 }
 
@@ -79,7 +81,8 @@ nav h1 {
 
 /* Main Content Layout */
 .main-content {
-  /* */
+   /*Escribe abajo de esta linea comentada*/
+  
   margin-top: 20px;
 }
 
@@ -136,7 +139,8 @@ nav h1 {
 /* Footer */
 footer {
   margin-top: 30px;
-  text-align: center;
+  /*Escribe abajo de esta linea comentada*/
+  
   font-size: 0.9rem;
   color: #657786;
 }
