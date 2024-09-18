@@ -15,7 +15,6 @@ las propiedades css:
       <h1>Twitter Clone</h1>
     </nav>
   </header>
-
   <div class="main-content">
     <aside class="sidebar">
       <ul>
@@ -26,18 +25,15 @@ las propiedades css:
         <li>Perfil</li>
       </ul>
     </aside>
-
     <section class="content">
       <h2>Feed</h2>
       <p>Aquí va el contenido del feed</p>
     </section>
-
     <aside class="extra">
       <h2>Tendencias</h2>
       <p>Aquí van las tendencias</p>
     </aside>
   </div>
-
   <footer>
     <p>© 2024 Twitter Clone</p>
   </footer>
@@ -47,69 +43,101 @@ las propiedades css:
 y el css
 
 ```css
-  * {
+/* General Styles */
+/* General Styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+body {
+  background-color: #f5f8fa;
+  color: #14171a;
 }
 
+.container {
+ 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1; 
+}
+
+/* Header */
 header {
   background-color: #1da1f2;
-  color: white;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
+  color: white;
 }
 
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav h1 {
+  font-size: 2rem;
 }
 
+/* Main Content Layout */
 .main-content {
-  display: flex;
-  flex: 1;
+  /* */
+  margin-top: 20px;
 }
 
+/* Sidebar */
 .sidebar {
   width: 20%;
-  background-color: #f5f8fa;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar ul {
-  list-style: none;
+  list-style-type: none;
 }
 
 .sidebar ul li {
-
+  padding: 10px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
 }
 
+.sidebar ul li:hover {
+  color: #1da1f2;
+}
+/* Content Section */
 .content {
-  flex: 1;
+  width: 55%;
+  background-color: white;
+  border-radius: 10px;
   padding: 20px;
-  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Extra Section (Trends) */
 .extra {
-
+  width: 20%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.extra h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Footer */
 footer {
-  
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #657786;
 }
-
-.container-figures {
- 
-}
-
 ```
